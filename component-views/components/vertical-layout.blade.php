@@ -4,7 +4,7 @@
     <meta charset="utf-8">
     <meta content="width=device-width, initial-scale=1"
           name="viewport">
-    <title>Vertical Layout</title>
+    <title>{{ $title }}</title>
     @vite(['resources/css/app.css', 'resources/js/app.js'])
     <style>
         html {
@@ -73,7 +73,7 @@
 
         <div class="border-b border-gray-200 bg-white py-4">
             <div class="container mx-auto">
-                <h1 class="px-4 text-2xl font-bold">Application Name</h1>
+                <h1 class="px-4 text-2xl font-bold">{{ $appName }}</h1>
             </div>
 
         </div>
