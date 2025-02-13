@@ -1,11 +1,11 @@
 <div class="items-center lg:flex">
-    <a class="block px-4 py-6 font-bold text-gray-800 hover:bg-crimson hover:text-white lg:font-normal lg:text-white lg:hover:bg-crimson-600"
+    <a class="block whitespace-nowrap px-4 py-6 font-bold text-gray-800 hover:bg-crimson hover:text-white lg:font-normal lg:text-white lg:hover:bg-crimson-600 dark:text-dm-100"
        href="#">Link 1</a>
 
     <x-dropdown :alignment="'right'"
                 :type="$mobile ? 'simple' : 'default'">
         <x-slot:trigger
-                class="block w-full px-4 py-6 font-bold text-gray-800 hover:bg-crimson hover:text-white lg:w-auto lg:font-normal lg:text-white lg:hover:bg-crimson-600 lg:group-has-[:hover]:bg-crimson-600">
+                class="block w-full whitespace-nowrap px-4 py-6 font-bold text-gray-800 hover:bg-crimson hover:text-white lg:w-auto lg:font-normal lg:text-white lg:hover:bg-crimson-600 lg:group-has-[:hover]:bg-crimson-600 dark:text-dm-100">
             <span class="flex items-center">
                 Dropdown 1
                 <svg class="ml-1 size-5"
@@ -20,24 +20,27 @@
             </span>
         </x-slot>
 
-        <span class="ml-6 lg:ml-0">
+        <x-slot:container
+                class="bg-white dark:bg-dm-700">
+            <span class="ml-6 lg:ml-0">
 
-            <a class="block px-4 py-2 text-sm text-gray-700 hover:bg-gray-100"
-               href="#">Item 1</a>
-            <a class="block px-4 py-2 text-sm text-gray-700 hover:bg-gray-100"
-               href="#">Item 2</a>
-            <a class="block px-4 py-2 text-sm text-gray-700 hover:bg-gray-100"
-               href="#">Item 3</a>
-        </span>
+                <a class="block whitespace-nowrap px-4 py-2 text-sm text-gray-700 hover:bg-gray-100 dark:text-dm-100 dark:hover:bg-dm-300"
+                   href="#">Item 1</a>
+                <a class="block whitespace-nowrap px-4 py-2 text-sm text-gray-700 hover:bg-gray-100 dark:text-dm-100 dark:hover:bg-dm-300"
+                   href="#">Item 2</a>
+                <a class="block whitespace-nowrap px-4 py-2 text-sm text-gray-700 hover:bg-gray-100 dark:text-dm-100 dark:hover:bg-dm-300"
+                   href="#">Item 3</a>
+            </span>
+        </x-slot>
     </x-dropdown>
 
-    <a class="block px-4 py-6 font-bold text-gray-800 hover:bg-crimson hover:text-white lg:font-normal lg:text-white lg:hover:bg-crimson-600"
+    <a class="block whitespace-nowrap px-4 py-6 font-bold text-gray-800 hover:bg-crimson hover:text-white lg:font-normal lg:text-white lg:hover:bg-crimson-600 dark:text-dm-100"
        href="#">Link 2</a>
 
     <x-dropdown :alignment="'right'"
                 :type="$mobile ? 'simple' : 'default'">
         <x-slot:trigger
-                class="block w-full px-4 py-6 font-bold text-gray-800 hover:bg-crimson hover:text-white lg:w-auto lg:font-normal lg:text-white lg:hover:bg-crimson-600 lg:group-has-[:hover]:bg-crimson-600">
+                class="block w-full whitespace-nowrap px-4 py-6 font-bold text-gray-800 hover:bg-crimson hover:text-white lg:w-auto lg:font-normal lg:text-white lg:hover:bg-crimson-600 lg:group-has-[:hover]:bg-crimson-600 dark:text-dm-100">
             <span class="flex items-center">
                 Dropdown 2
                 <svg class="ml-1 size-5"
@@ -52,21 +55,24 @@
             </span>
         </x-slot>
 
-        <span class="ml-6 lg:ml-0">
+        <x-slot:container
+                class="bg-white dark:bg-dm-700">
+            <span class="ml-6 lg:ml-0">
 
-            <a class="block px-4 py-2 text-sm text-gray-700 hover:bg-gray-100"
-               href="#">Item 4</a>
-            <a class="block px-4 py-2 text-sm text-gray-700 hover:bg-gray-100"
-               href="#">Item 5</a>
-            <a class="block px-4 py-2 text-sm text-gray-700 hover:bg-gray-100"
-               href="#">Item 6</a>
-        </span>
+                <a class="block px-4 py-2 text-sm text-gray-700 hover:bg-gray-100 dark:text-dm-100 dark:hover:bg-dm-300"
+                   href="#">Item 4</a>
+                <a class="block px-4 py-2 text-sm text-gray-700 hover:bg-gray-100 dark:text-dm-100 dark:hover:bg-dm-300"
+                   href="#">Item 5</a>
+                <a class="block px-4 py-2 text-sm text-gray-700 hover:bg-gray-100 dark:text-dm-100 dark:hover:bg-dm-300"
+                   href="#">Item 6</a>
+            </span>
+        </x-slot>
     </x-dropdown>
 
     <x-dropdown :alignment="'right'"
                 :type="$mobile ? 'simple' : 'default'">
         <x-slot:trigger
-                class="block w-full px-4 py-6 font-bold text-gray-800 hover:bg-crimson hover:text-white lg:w-auto lg:font-normal lg:text-white lg:hover:bg-crimson-600 lg:group-has-[:hover]:bg-crimson-600">
+                class="block w-full whitespace-nowrap px-4 py-6 font-bold text-gray-800 hover:bg-crimson hover:text-white lg:w-auto lg:font-normal lg:text-white lg:hover:bg-crimson-600 lg:group-has-[:hover]:bg-crimson-600 dark:text-dm-100">
             <span class="flex items-center">
                 <svg class="mr-2 size-5"
                      fill="currentColor"
@@ -89,33 +95,38 @@
             </span>
         </x-slot>
 
-        <span class="ml-6 lg:ml-0">
+        <x-slot:container
+                class="bg-white dark:bg-dm-700">
+            <span class="ml-6 lg:ml-0">
 
-            <a class="flex items-center px-4 py-2 text-sm text-gray-700 hover:bg-gray-100"
-               href="#">
-                <svg class="mr-2 size-4"
-                     fill="currentColor"
-                     viewBox="0 0 20 20"
-                     xmlns="http://www.w3.org/2000/svg">
-                    <path d="M17 2.75a.75.75 0 0 0-1.5 0v5.5a.75.75 0 0 0 1.5 0v-5.5ZM17 15.75a.75.75 0 0 0-1.5 0v1.5a.75.75 0 0 0 1.5 0v-1.5ZM3.75 15a.75.75 0 0 1 .75.75v1.5a.75.75 0 0 1-1.5 0v-1.5a.75.75 0 0 1 .75-.75ZM4.5 2.75a.75.75 0 0 0-1.5 0v5.5a.75.75 0 0 0 1.5 0v-5.5ZM10 11a.75.75 0 0 1 .75.75v5.5a.75.75 0 0 1-1.5 0v-5.5A.75.75 0 0 1 10 11ZM10.75 2.75a.75.75 0 0 0-1.5 0v1.5a.75.75 0 0 0 1.5 0v-1.5ZM10 6a2 2 0 1 0 0 4 2 2 0 0 0 0-4ZM3.75 10a2 2 0 1 0 0 4 2 2 0 0 0 0-4ZM16.25 10a2 2 0 1 0 0 4 2 2 0 0 0 0-4Z" />
-                </svg>
+                <a class="dark:text-md-100 flex items-center px-4 py-2 text-sm text-gray-700 hover:bg-gray-100 dark:text-dm-100 dark:hover:bg-dm-300 dark:hover:bg-dm-300"
+                   href="#">
+                    <svg class="mr-2 size-4"
+                         fill="currentColor"
+                         viewBox="0 0 20 20"
+                         xmlns="http://www.w3.org/2000/svg">
+                        <path d="M17 2.75a.75.75 0 0 0-1.5 0v5.5a.75.75 0 0 0 1.5 0v-5.5ZM17 15.75a.75.75 0 0 0-1.5 0v1.5a.75.75 0 0 0 1.5 0v-1.5ZM3.75 15a.75.75 0 0 1 .75.75v1.5a.75.75 0 0 1-1.5 0v-1.5a.75.75 0 0 1 .75-.75ZM4.5 2.75a.75.75 0 0 0-1.5 0v5.5a.75.75 0 0 0 1.5 0v-5.5ZM10 11a.75.75 0 0 1 .75.75v5.5a.75.75 0 0 1-1.5 0v-5.5A.75.75 0 0 1 10 11ZM10.75 2.75a.75.75 0 0 0-1.5 0v1.5a.75.75 0 0 0 1.5 0v-1.5ZM10 6a2 2 0 1 0 0 4 2 2 0 0 0 0-4ZM3.75 10a2 2 0 1 0 0 4 2 2 0 0 0 0-4ZM16.25 10a2 2 0 1 0 0 4 2 2 0 0 0 0-4Z" />
+                    </svg>
 
-                Settings
-            </a>
-            <hr class="my-2">
-            <a class="flex items-center bg-red-50 px-4 py-2 text-sm text-red-800 hover:bg-red-100"
-               href="#">
-                <svg class="mr-2 size-4"
-                     fill="currentColor"
-                     viewBox="0 0 20 20"
-                     xmlns="http://www.w3.org/2000/svg">
-                    <path clip-rule="evenodd"
-                          d="M10 18a8 8 0 1 0 0-16 8 8 0 0 0 0 16ZM6.75 9.25a.75.75 0 0 0 0 1.5h4.59l-2.1 1.95a.75.75 0 0 0 1.02 1.1l3.5-3.25a.75.75 0 0 0 0-1.1l-3.5-3.25a.75.75 0 1 0-1.02 1.1l2.1 1.95H6.75Z"
-                          fill-rule="evenodd" />
-                </svg>
+                    Settings
+                </a>
+                <hr class="my-2">
+                <a class="flex items-center bg-red-50 px-4 py-2 text-sm text-red-800 hover:bg-red-100"
+                   href="#">
+                    <svg class="mr-2 size-4"
+                         fill="currentColor"
+                         viewBox="0 0 20 20"
+                         xmlns="http://www.w3.org/2000/svg">
+                        <path clip-rule="evenodd"
+                              d="M10 18a8 8 0 1 0 0-16 8 8 0 0 0 0 16ZM6.75 9.25a.75.75 0 0 0 0 1.5h4.59l-2.1 1.95a.75.75 0 0 0 1.02 1.1l3.5-3.25a.75.75 0 0 0 0-1.1l-3.5-3.25a.75.75 0 1 0-1.02 1.1l2.1 1.95H6.75Z"
+                              fill-rule="evenodd" />
+                    </svg>
 
-                Logout</a>
-        </span>
+                    Logout</a>
+            </span>
+        </x-slot>
     </x-dropdown>
+
+    <x-theme-selector class="block w-full px-4 py-6 font-bold text-gray-800 hover:bg-crimson hover:text-white lg:font-normal lg:text-white lg:hover:bg-crimson-600 dark:text-white" />
 
 </div>

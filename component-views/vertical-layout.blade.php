@@ -1,4 +1,8 @@
-<html lang="en">
+<html class="light"
+      lang="en"
+      x-data="{}"
+      x-cloak>
+
 
 <head>
     <meta charset="utf-8">
@@ -30,7 +34,7 @@
     @livewireStyles
 </head>
 
-<body class="flex min-h-screen flex-col">
+<body class="flex min-h-screen flex-col dark:bg-dm-300 dark:text-dm-100">
 
     <!-- Main Navigation -->
     <nav x-data="{
@@ -40,7 +44,7 @@
         }
     }"
          x-on:keydown.escape="mobileNavOpen = false">
-        <div class="bg-crimson">
+        <div class="bg-crimson dark:bg-dm-700">
             <div class="container mx-auto flex items-center justify-between">
                 <a class="px-2 py-6 hover:bg-crimson-600"
                    href="#">
@@ -71,7 +75,7 @@
             </div>
         </div>
 
-        <div class="border-b border-gray-200 bg-white py-4">
+        <div class="border-b border-gray-200 bg-white py-4 dark:border-gray-600 dark:bg-dm-300">
             <div class="container mx-auto">
                 <h1 class="px-4 text-2xl font-bold">{{ $appName }}</h1>
             </div>
@@ -79,7 +83,7 @@
         </div>
 
         <!-- Mobile Nav -->
-        <div class="absolute right-0 top-0 h-screen w-3/4 max-w-96 border-l border-gray-200 bg-white shadow-lg"
+        <div class="absolute right-0 top-0 h-screen w-3/4 max-w-96 border-l border-gray-200 bg-white shadow-lg dark:border-gray-600 dark:bg-dm-700"
              x-cloak
              x-on:click.away="toggleMobileNav()"
              x-show="mobileNavOpen">
@@ -104,9 +108,9 @@
     </div>
 
     <!-- Footer -->
-    <footer class="container mx-auto border-t border-gray-100">
-        <div class="flex items-center justify-center py-4">
-            <p class="text-center text-sm text-gray-500">The University of </p>
+    <footer class="container mx-auto border-t border-gray-100 dark:border-gray-600">
+        <div class="flex items-center justify-center py-4 text-gray-500 dark:text-gray-400">
+            <p class="text-center text-sm">The University of </p>
             <svg class="size-4 text-crimson"
                  preserveAspectRatio="none"
                  version="1.0"
@@ -123,7 +127,7 @@
                     <path d="M14627 2673 c-4 -3 -7 -78 -7 -165 l0 -158 35 0 35 0 0 65 c0 57 2 65 19 65 14 0 27 -18 47 -65 28 -63 29 -65 66 -65 l38 0 -32 65 -32 65 27 28 c56 58 36 140 -40 161 -42 12 -146 15 -156 4z m161 -87 c5 -26 -24 -46 -65 -46 -31 0 -33 2 -33 36 l0 35 47 -3 c38 -2 49 -7 51 -22z"></path>
                 </g>
             </svg>
-            <p class="text-center text-sm text-gray-500">labama {{ date('Y') }}</p>
+            <p class="text-center text-sm">labama {{ date('Y') }}</p>
         </div>
     </footer>
     @livewireScripts

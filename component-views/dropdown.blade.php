@@ -37,13 +37,13 @@
 
             <!-- Panel -->
             <div :id="$id('dropdown-button')"
-                 class="{{ $alignment }}-0 absolute z-10 mt-1 min-w-48 origin-top-left rounded-lg border border-gray-200 bg-white p-1.5 shadow-sm outline-none"
+                 {{ $container->attributes->class([$alignment . '-0 absolute z-10 mt-1 min-w-48 origin-top-left rounded-lg border border-gray-200 dark:border-gray-600 bg-white p-1.5 shadow-sm outline-none']) }}
                  x-cloak
                  x-on:click.outside="close($refs.button)"
                  x-ref="panel"
                  x-show="open"
                  x-transition.origin.top.left>
-                {{ $slot }}
+                {{ $container }}
             </div>
         </div>
     @endif
@@ -57,7 +57,7 @@
 
             <div x-show="open">
 
-                {{ $slot }}
+                {{ $container }}
             </div>
         </div>
     @endif
