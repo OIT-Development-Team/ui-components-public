@@ -5,7 +5,7 @@
     <x-dropdown :alignment="'right'"
                 :type="$mobile ? 'simple' : 'default'">
         <x-slot:trigger
-                class="block w-full whitespace-nowrap px-4 py-6 font-bold text-gray-800 hover:bg-crimson hover:text-white lg:w-auto lg:font-normal lg:text-white lg:hover:bg-crimson-600 lg:group-has-[:hover]:bg-crimson-600 dark:text-dm-100">
+                class="block w-full cursor-pointer whitespace-nowrap px-4 py-6 font-bold text-gray-800 hover:bg-crimson hover:text-white lg:w-auto lg:font-normal lg:text-white lg:hover:bg-crimson-600 lg:group-has-[:hover]:bg-crimson-600 dark:text-dm-100">
             <span class="flex items-center">
                 Dropdown 1
                 <svg class="ml-1 size-5"
@@ -40,7 +40,7 @@
     <x-dropdown :alignment="'right'"
                 :type="$mobile ? 'simple' : 'default'">
         <x-slot:trigger
-                class="block w-full whitespace-nowrap px-4 py-6 font-bold text-gray-800 hover:bg-crimson hover:text-white lg:w-auto lg:font-normal lg:text-white lg:hover:bg-crimson-600 lg:group-has-[:hover]:bg-crimson-600 dark:text-dm-100">
+                class="block w-full cursor-pointer whitespace-nowrap px-4 py-6 font-bold text-gray-800 hover:bg-crimson hover:text-white lg:w-auto lg:font-normal lg:text-white lg:hover:bg-crimson-600 lg:group-has-[:hover]:bg-crimson-600 dark:text-dm-100">
             <span class="flex items-center">
                 Dropdown 2
                 <svg class="ml-1 size-5"
@@ -72,7 +72,7 @@
     <x-dropdown :alignment="'right'"
                 :type="$mobile ? 'simple' : 'default'">
         <x-slot:trigger
-                class="block w-full whitespace-nowrap px-4 py-6 font-bold text-gray-800 hover:bg-crimson hover:text-white lg:w-auto lg:font-normal lg:text-white lg:hover:bg-crimson-600 lg:group-has-[:hover]:bg-crimson-600 dark:text-dm-100">
+                class="block w-full cursor-pointer whitespace-nowrap px-4 py-6 font-bold text-gray-800 hover:bg-crimson hover:text-white lg:w-auto lg:font-normal lg:text-white lg:hover:bg-crimson-600 lg:group-has-[:hover]:bg-crimson-600 dark:text-dm-100">
             <span class="flex items-center">
                 <svg class="mr-2 size-5"
                      fill="currentColor"
@@ -127,6 +127,6 @@
         </x-slot>
     </x-dropdown>
 
-    <x-theme-selector class="block w-full px-4 py-6 font-bold text-gray-800 hover:bg-crimson hover:text-white lg:font-normal lg:text-white lg:hover:bg-crimson-600 dark:text-white" />
+    <x-theme-selector class="block w-full cursor-pointer px-4 py-6 font-bold text-gray-800 hover:bg-crimson hover:text-white lg:font-normal lg:text-white lg:hover:bg-crimson-600 dark:text-white" />
 
 </div>
