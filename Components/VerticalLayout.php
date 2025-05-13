@@ -11,9 +11,9 @@ class VerticalLayout extends Component
     /**
      * Create a new component instance.
      */
-    public function __construct(public ?string $appName = "", public ?string $title)
+    public function __construct(public ?string $appName, public ?string $title)
     {
-       $this->title = $title ?? $appName; 
+        $this->title = $title ?? $appName;
     }
 
     /**

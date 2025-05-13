@@ -3,28 +3,17 @@
 namespace App\Livewire;
 
 use App\Models\User;
-use Illuminate\Pagination\LengthAwarePaginator;
 use Livewire\Component;
 use Livewire\WithPagination;
-use Illuminate\Support\Collection;
 
 class Table extends Component
 {
     use WithPagination;
 
-    /**
-     * @var string
-     */
     public string $search = '';
 
-    /**
-     * @var string
-     */
     public string $sortField = '';
 
-    /**
-     * @var bool
-     */
     public bool $sortAsc = true;
 
     public function render()
@@ -36,8 +25,8 @@ class Table extends Component
 
     public function searchAndSort()
     {
-        if (!empty($this->search)) {
-            $users = User::where('name', 'like', '%' . $this->search . '%');
+        if (! empty($this->search)) {
+            $users = User::where('name', 'like', '%'.$this->search.'%');
         } else {
             $users = User::query();
         }
@@ -51,7 +40,7 @@ class Table extends Component
     public function setSortField($field)
     {
         if ($this->sortField === $field) {
-            $this->sortAsc = !$this->sortAsc;
+            $this->sortAsc = ! $this->sortAsc;
         } else {
             $this->sortAsc = true;
         }

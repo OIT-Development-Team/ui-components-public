@@ -10,9 +10,9 @@ class Dropdown extends Component
 {
     /**
      * Create a new component instance.
-     * 
-     * @param string $alignment The alignment of the dropdown, either left or right
-     * @param string $type The type of the dropdown, either default or simple (simple is not positioned absolute/relative, works like a simple hide/show)
+     *
+     * @param  string  $alignment  The alignment of the dropdown, either left or right
+     * @param  string  $type  The type of the dropdown, either default or simple (simple is not positioned absolute/relative, works like a simple hide/show)
      */
     public function __construct(public string $alignment = 'left', public string $type = 'default')
     {
